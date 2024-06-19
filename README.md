@@ -8,7 +8,8 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 
 ### Repository Structure
 
-- **Database Creation and Preprocessing**:
+- **EDA, Database Creation, Preprocessing**:
+  - This is done in the folder `**Database Creation + Conversation Mining**` and `**Exploratory Data Analysis (EDA)**`.
   - Scripts for fetching, cleaning, and preparing data. These scripts handle the extraction of tweets, normalization of text, and structuring data into `tweets.db` and `conversations.db`.
 
 - **Sentiment Analysis**:
@@ -17,10 +18,11 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 - **Data Visualization**:
   - Jupyter notebooks that generate visualizations to depict trends in sentiment and response times, providing a visual assessment of service quality and public perception.
 
-- **Topic Modeling**:
+
+- **Topic Modeling**: In folder `**Text Normalization + Topic Mining**`
   - Notebooks dedicated to uncovering prevalent themes and topics within the tweet data, using advanced NLP techniques like LDA and BERTopic for deeper content analysis.
 
-- **Normalization**:
+- **Normalization**: In folder `**Text Normalization + Topic Mining**`
   - Normalization for the entire text in tweets.db, this was primarily used for topic modeling.
 
 - **Utilities**:
