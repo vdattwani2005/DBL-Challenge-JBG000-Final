@@ -25,6 +25,10 @@ This repository contains various scripts and notebooks designed to analyze tweet
   - vaderSentiment
   - transformers
   - scipy
-  - stanza
+  - nltk
   - scikit-learn
   - sqlite3
+  - torch with cuda driver
+  - bertopic
+  - sentence tranformer
+  - 
