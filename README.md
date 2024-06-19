@@ -9,7 +9,7 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 ### Repository Structure
 
 - **EDA, Database Creation, Preprocessing**:
-  - This is done in the folder `Database Creation + Conversation Mining` and `**Exploratory Data Analysis (EDA)`.
+  - This is done in the folder `Database Creation + Conversation Mining` and `Exploratory Data Analysis (EDA)`.
   - Scripts for fetching, cleaning, and preparing data. These scripts handle the extraction of tweets, normalization of text, and structuring data into `tweets.db` and `conversations.db`.
 
 - **Sentiment Analysis**:
