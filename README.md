@@ -15,8 +15,8 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 - **Sentiment Analysis**:
   - Implementation of sentiment analysis using VADER and BERT-based models to gauge public sentiment from tweets. Includes detailed sentiment tracking over time and across various service aspects.
 
-- **Data Visualization**:
-  - Jupyter notebooks that generate visualizations to depict trends in sentiment and response times, providing a visual assessment of service quality and public perception.
+- **Data Visualization**: Folder `Visualisations `
+  - Jupyter notebooks that generate visualizations to depict trends in sentiment and response times, providing a visual assessment of service quality and public perception. These maninly include the visualisations for the DEMO.
 
 
 - **Topic Modeling**: In folder `Text Normalization + Topic Mining`
