@@ -16,7 +16,7 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
   - Scripts for fetching, cleaning, and preparing data. These scripts handle the extraction of tweets, normalization of text, and structuring data into `tweets.db` and `conversations.db`.
 
 - **Sentiment Analysis**:
-  - Implementation of sentiment analysis using VADER to gauge public sentiment from tweets. Includes detailed sentiment tracking over time and across various service aspects.
+  - Implementation of sentiment analysis using VADER to gauge public sentiment from tweets. Includes detailed sentiment tracking over time and across various service aspects and some visualizations.
 
 - **Data Visualization**: Folder `Visualisations `
   - Jupyter notebooks that generate visualizations to depict trends in sentiment and response times, providing a visual assessment of service quality and public perception. These maninly include the visualisations for the DEMO.
@@ -60,3 +60,6 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 
 #### Installation
 Clone the repository and install the necessary packages.
+
+#### Correct order of files for complete run:
+- 1- Database Creation + Conversation Mining, 2- EDA, 3- Text Normalization, 4- Sentiment Analysis - Topic Mining, 5- Topic/Sentiment Insertion, 6- Performance and Visualizations
