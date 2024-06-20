@@ -6,7 +6,7 @@
 This repository hosts scripts and Jupyter notebooks dedicated to the analysis of tweets concerning various airlines, with a special focus on easyJet. The project aims to extract meaningful insights from tweet data, such as customer sentiments and conversational dynamics, to assess the performance of easyJet's Twitter support team and decide whether they should be retained or replaced.
 
 ```diff
-- Code for DEMO is in Visualisations folder
++ Code for DEMO is in Visualisations folder
 ```
 
 ### Repository Structure
