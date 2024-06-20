@@ -27,8 +27,8 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 
 - **Normalization**: In folder `Text Normalization + Topic Mining`
   - Normalization for the entire text in tweets.db, this was primarily used for topic modeling. DISCLAIMER the model needs 3+ hours to run on a intel 12th gen i7 core and Nvidia gpu with 8.6 compute capabilities.
-  - **Topic/Sentiment Insertion**: In folder `Text Normalization + Topic Mining`
-  - from inserts the topic model and sentiment analysis outcomes into the conversation database. It also computes the sentiment evolution score.
+- **Topic/Sentiment Insertion**: In folder `Text Normalization + Topic Mining`
+  - inserts the topic model and sentiment analysis outcomes into the conversation database. It also computes the sentiment evolution score.
 
 
 - **Model Statistics**: In `Performance`
