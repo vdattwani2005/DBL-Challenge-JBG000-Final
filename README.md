@@ -25,7 +25,7 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 - **Normalization**: In folder `Text Normalization + Topic Mining`
   - Normalization for the entire text in tweets.db, this was primarily used for topic modeling.
 
-- **Performance**:
+- **Model Statistics**: In `Performance`
   - Helper modules that facilitate database interactions and then check for accuracy and other stats related to the models bring used.
 
 
