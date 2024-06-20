@@ -26,7 +26,9 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
   - Notebooks dedicated to uncovering prevalent themes and topics within the tweet data, using advanced NLP techniques such as BERTopic for deeper content analysis. DISCLAIMER the model needs 6+ hours to run on a intel 12th gen i7 core and Nvidia gpu with 8.6 compute capabilities. 
 
 - **Normalization**: In folder `Text Normalization + Topic Mining`
-  - Normalization for the entire text in tweets.db, this was primarily used for topic modeling. DISCLAIMER the model needs 3+ hours to run on a intel 12th gen i7 core and Nvidia gpu with 8.6 compute capabilities. 
+  - Normalization for the entire text in tweets.db, this was primarily used for topic modeling. DISCLAIMER the model needs 3+ hours to run on a intel 12th gen i7 core and Nvidia gpu with 8.6 compute capabilities.
+  - **Topic/Sentiment Insertion**: In folder `Text Normalization + Topic Mining`
+  - from inserts the topic model and sentiment analysis outcomes into the conversation database. It also computes the sentiment evolution score.
 
 
 - **Model Statistics**: In `Performance`
