@@ -54,5 +54,4 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
   - sentence tranformer
 
 #### Installation
-Clone the repository and install the necessary packages:
-```bash
+Clone the repository and install the necessary packages.
