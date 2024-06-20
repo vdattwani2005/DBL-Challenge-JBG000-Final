@@ -56,6 +56,3 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 #### Installation
 Clone the repository and install the necessary packages:
 ```bash
-git clone <repository-url>
-cd DBL-Challenge-JBG000-Final
-pip install -r requirements.txt
