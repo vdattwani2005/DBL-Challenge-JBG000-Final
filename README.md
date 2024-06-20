@@ -7,6 +7,7 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 
 ```diff
 + Code for DEMO is in Visualisations folder
+- It contains timestamp given during the DEMO.
 ```
 
 ### Repository Structure
