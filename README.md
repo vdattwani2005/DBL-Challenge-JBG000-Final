@@ -23,10 +23,11 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 
 
 - **Topic Modeling**: In folder `Text Normalization + Topic Mining`
-  - Notebooks dedicated to uncovering prevalent themes and topics within the tweet data, using advanced NLP techniques like LDA and BERTopic for deeper content analysis.
+  - Notebooks dedicated to uncovering prevalent themes and topics within the tweet data, using advanced NLP techniques such as BERTopic for deeper content analysis. DISCLAIMER the model needs 6+ hours to run on a intel 12th gen i7 core and Nvidia gpu with 8.6 compute capabilities. 
 
 - **Normalization**: In folder `Text Normalization + Topic Mining`
-  - Normalization for the entire text in tweets.db, this was primarily used for topic modeling.
+  - Normalization for the entire text in tweets.db, this was primarily used for topic modeling. DISCLAIMER the model needs 3+ hours to run on a intel 12th gen i7 core and Nvidia gpu with 8.6 compute capabilities. 
+
 
 - **Model Statistics**: In `Performance`
   - Helper modules that facilitate database interactions and then check for accuracy and other stats related to the models bring used.
@@ -37,7 +38,7 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
 
 #### Prerequisites
 - Python 3.8 or higher
-- CUDA-compatible GPU for deep learning models (optional but recommended for BERT-based models)
+- CUDA-compatible GPU for deep learning models (optional but recommended for BERT-based models and text normalization)
 - Required Python packages (install using `pip install -r requirements.txt`):
   - pandas
   - numpy
@@ -52,6 +53,8 @@ This repository hosts scripts and Jupyter notebooks dedicated to the analysis of
   - torch with cuda driver
   - bertopic
   - sentence tranformer
+  - spacy
+  - tqdm
 
 #### Installation
 Clone the repository and install the necessary packages.
