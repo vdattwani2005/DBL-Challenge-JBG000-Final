@@ -36,112 +36,130 @@ The code creates SQLite databases (tweets.db and conversations.db) to store and 
 
 ### Database structure
 The code creates the databases 'tweets.db' and 'conversations.db' with the following structures.
+
+
 #### 1. 'Tweets.db':
 **table '_tweets_'**
-|column name | data type |
-|--- | --- |
-|id_str|TEXT|
-|created_at | TEXT |
-| in_reply_to_status_id_str |TEXT|
-|in_reply_to_user_id_str | TEXT|
-|lang|TEXT|
-|quote_count|INTEGER|
-|quoted_status_id_str|TEXT|
-|quoted_user_id_str|TEXT|
-|reply_count|INTEGER|
-|retweet_count|INTEGER|
-|text|TEXT|
-|truncated|BOOLEAN|
-|user_id_str|TEXT|
-|possibly_sensitive|BOOLEAN|
-|sent_vader|REAL|
-|sent_label|INTEGER|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each tweet |
+| created_at | TEXT | Timestamp when the tweet was created |
+| in_reply_to_status_id_str | TEXT | ID of the original tweet that this tweet is replying to |
+| in_reply_to_user_id_str | TEXT | ID of the user to whom this tweet is a reply |
+| lang | TEXT | Language of the tweet |
+| quote_count | INTEGER | Number of times the tweet was quoted |
+| quoted_status_id_str | TEXT | ID of the tweet that was quoted |
+| quoted_user_id_str | TEXT | ID of the user whose tweet was quoted |
+| reply_count | INTEGER | Number of replies to the tweet |
+| retweet_count | INTEGER | Number of times the tweet was retweeted |
+| text | TEXT | Content of the tweet |
+| truncated | BOOLEAN | Indicates if the tweet is truncated |
+| user_id_str | TEXT | ID of the user who posted the tweet |
+| possibly_sensitive | BOOLEAN | Indicates if the tweet may contain sensitive content |
+| sent_vader | REAL | Sentiment score of the tweet (VADER analysis) |
+| sent_label | INTEGER | Sentiment label of the tweet |
+
 
 
 **table '_users_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|name|TEXT|
-|screen_name|TEXT|
-|verified|BOOLEAN|
-|followers_count|INTEGER|
-|profile_background_color|TEXT|
-|profile_link_color|TEXT|
-|profile_sidebar_border_color|TEXT|
-|profile_sidebar_fill_color|TEXT|
-|profile_text_color|TEXT|
-|profile_use_background_image|BOOLEAN|
-|profile_background_image_url|TEXT|
-|profile_background_image_url_https|TEXT|
-|profile_background_title|TEXT|
-|profile_image_url|TEXT|
-|profile_image_url_https|TEXT|
-|profile_banner_url|TEXT|
-|default_profile|BOOLEAN|
-|default_profile_image|BOOLEAN|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each user |
+| name | TEXT | Full name of the user |
+| screen_name | TEXT | Username of the user on the platform |
+| verified | BOOLEAN | Indicates if the user account is verified |
+| followers_count | INTEGER | Number of followers the user has |
+| profile_background_color | TEXT | Hex code for the background color of the user's profile |
+| profile_link_color | TEXT | Hex code for the color of links in the user's profile |
+| profile_sidebar_border_color | TEXT | Hex code for the color of the sidebar border in the user's profile |
+| profile_sidebar_fill_color | TEXT | Hex code for the color of the sidebar fill in the user's profile |
+| profile_text_color | TEXT | Hex code for the color of the text in the user's profile |
+| profile_use_background_image | BOOLEAN | Indicates if the user uses a background image in their profile |
+| profile_background_image_url | TEXT | URL of the background image used in the user's profile |
+| profile_background_image_url_https | TEXT | HTTPS URL of the background image used in the user's profile |
+| profile_background_title | TEXT | Title or description of the profile background image |
+| profile_image_url | TEXT | URL of the user's profile image |
+| profile_image_url_https | TEXT | HTTPS URL of the user's profile image |
+| profile_banner_url | TEXT | URL of the user's profile banner image |
+| default_profile | BOOLEAN | Indicates if the user is using the default profile layout |
+| default_profile_image | BOOLEAN | Indicates if the user is using the default profile image |
+
 
 **table '_extended_tweets_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|full_text|TEXT|
-|display_text_range|TEXT|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each tweet |
+| full_text | TEXT | Full text content of the extended tweet |
+| display_text_range | TEXT | Range of the text to be displayed in the extended tweet |
+
 
 **table '_extended_tweet_urls_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|url|TEXT|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for extended tweet |
+| url | TEXT | URL included in the tweet |
 
 **table '_extended_tweet_hashtags_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|hashtag|TEXT|
 
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each tweet |
+| hashtag | TEXT | Hashtag included in the tweet |
 
 **table '_extended_tweet_user_mentions_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|user_mention|TEXT|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each  tweet |
+| user_mention | TEXT | Username mentioned in the  tweet |
 
 **table '_entities_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|hashtags|TEXT|
-|urls|TEXT|
-|user_mentions|TEXT|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each tweet|
+| hashtags | TEXT | List of hashtags associated with the tweet |
+| urls | TEXT | List of URLs associated with the tweet |
+| user_mentions | TEXT | List of user mentions associated with the tweet |
+
+
 
 **table '_emb_tweets_'**
-|column name | data type |
-| --- | --- |
-|id_str|TEXT|
-|norm_tweets|TEXT|
-|sent_vader|REAL|
-|sent_label|INTEGER|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| id_str | TEXT | Unique identifier for each tweet |
+| norm_tweets | TEXT | Normalized text content of the tweet |
+| sent_vader | REAL | Sentiment score of the embedded tweet (VADER analysis) |
+| sent_label | INTEGER | Sentiment label of the embedded tweet (1=positive, 0=neutral, -1 = negative)|
+
 
 
 #### 2. 'Conversations.db'
 
+
 **table '_conversations_'**
-|column name | data type |
-| --- | --- |
-|conversation_id|INTEGER|
-|root_tweet_id|TEXT|
-|conversation_json|TEXT|
-|in_reply_to_status_id_str|TEXT|
+
+| column name | data type | description |
+|-------------|------------|-------------|
+| conversation_id | INTEGER | Unique identifier for each conversation |
+| root_tweet_id | TEXT | ID of the root tweet in a conversation |
+| conversation_json | TEXT | JSON data containing the entire conversation thread |
 
 **table '_filtered_conversations_'**
-|column name | data type |
-| --- | --- |
-|conversation_id|INTEGER|
-|root_tweet_id|TEXT|
-|conversation_json|TEXT|
-|topic|TEXT|
 
+| column name | data type | description |
+|-------------|------------|-------------|
+| conversation_id | INTEGER | Unique identifier for each filtered conversation |
+| root_tweet_id | TEXT | ID of the root tweet in the filtered conversation |
+| conversation_json | TEXT | JSON data containing the filtered conversation thread |
+| topic | TEXT | Topic or category of the filtered conversation |
+
+*Note: The filtered conversations contain only the conversations which fit a specific definition of a conversation. This is, when it starts with a user, an airline responsds, and the user answers again.
 
 
 
